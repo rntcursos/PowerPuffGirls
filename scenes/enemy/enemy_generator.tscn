@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/enemy/enemy_generator.gd" type="Script" id=1]
+
+[node name="enemy_generator" type="Node2D"]
+
+position = Vector2( 2020, 540 )
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="spawn" type="Position2D" parent="." index="0"]
+
+_sections_unfolded = [ "Transform" ]
+
+[node name="timer" type="Timer" parent="." index="1"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = true
+
+[connection signal="timeout" from="timer" to="." method="_on_timer_timeout"]
+
+
