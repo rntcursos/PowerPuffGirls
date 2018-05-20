@@ -65,7 +65,7 @@ tracks/0/keys = {
 "values": [ ExtResource( 3 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 8 ) ]
 }
 
-[node name="loading" type="CanvasLayer" index="0"]
+[node name="loading" type="CanvasLayer"]
 
 layer = 1
 offset = Vector2( 0, 0 )

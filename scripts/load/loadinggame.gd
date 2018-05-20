@@ -18,7 +18,7 @@ func _process(delta):
 	if Input.is_action_pressed("ui_down"):
 		mov.y += 1
 		
-	position = mov * vel
+	position += mov * vel * delta
 	
 	if position.x >= 1900:
 		position.x = 1880
