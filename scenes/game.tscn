@@ -1,33 +1,16 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scripts/game.gd" type="Script" id=1]
-[ext_resource path="res://art/bg.png" type="Texture" id=2]
-[ext_resource path="res://art/nuvem2.png" type="Texture" id=3]
-[ext_resource path="res://art/nuvem3.png" type="Texture" id=4]
-[ext_resource path="res://art/nuvem4.png" type="Texture" id=5]
-[ext_resource path="res://art/nuvem.png" type="Texture" id=6]
-[ext_resource path="res://art/rect1209.png" type="Texture" id=7]
-[ext_resource path="res://art/rect1211.png" type="Texture" id=8]
-[ext_resource path="res://art/circle.png" type="Texture" id=9]
-[ext_resource path="res://scenes/enemy/enemy_generator.tscn" type="PackedScene" id=10]
-
-[sub_resource type="SegmentShape2D" id=1]
-
-custom_solver_bias = 0.0
-a = Vector2( 0, 0 )
-b = Vector2( 1920, 0 )
-
-[sub_resource type="SegmentShape2D" id=2]
-
-custom_solver_bias = 0.0
-a = Vector2( 0, 0 )
-b = Vector2( 0, 1080 )
-
-[sub_resource type="SegmentShape2D" id=3]
-
-custom_solver_bias = 0.0
-a = Vector2( 0, 0 )
-b = Vector2( 1920, 0 )
+[ext_resource path="res://scenes/map_limits.tscn" type="PackedScene" id=2]
+[ext_resource path="res://art/bg.png" type="Texture" id=3]
+[ext_resource path="res://art/nuvem2.png" type="Texture" id=4]
+[ext_resource path="res://art/nuvem3.png" type="Texture" id=5]
+[ext_resource path="res://art/nuvem4.png" type="Texture" id=6]
+[ext_resource path="res://art/nuvem.png" type="Texture" id=7]
+[ext_resource path="res://art/rect1209.png" type="Texture" id=8]
+[ext_resource path="res://art/rect1211.png" type="Texture" id=9]
+[ext_resource path="res://art/circle.png" type="Texture" id=10]
+[ext_resource path="res://scenes/enemy/enemy_generator.tscn" type="PackedScene" id=11]
 
 [node name="game" type="Node"]
 
@@ -38,35 +21,7 @@ script = ExtResource( 1 )
 position = Vector2( 150, 540 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="limits" type="StaticBody2D" parent="." index="1"]
-
-editor/display_folded = true
-visible = false
-input_pickable = true
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="bot" type="CollisionShape2D" parent="limits" index="0"]
-
-position = Vector2( 0.705353, 1079.11 )
-shape = SubResource( 1 )
-
-[node name="left" type="CollisionShape2D" parent="limits" index="1"]
-
-shape = SubResource( 2 )
-
-[node name="right" type="CollisionShape2D" parent="limits" index="2"]
-
-position = Vector2( 1236.35, 0 )
-shape = SubResource( 2 )
-
-[node name="top" type="CollisionShape2D" parent="limits" index="3"]
-
-shape = SubResource( 3 )
+[node name="limits" parent="." index="1" instance=ExtResource( 2 )]
 
 [node name="bg" type="Sprite" parent="." index="2"]
 
@@ -75,28 +30,28 @@ visible = false
 position = Vector2( 961.341, 539.748 )
 scale = Vector2( 1.07332, 1.06901 )
 z_index = -10
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 _sections_unfolded = [ "Animation", "Offset", "Region", "Transform", "Z Index" ]
 
 [node name="nuvem2" type="Sprite" parent="bg" index="0"]
 
 position = Vector2( -626.908, -262.307 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 
 [node name="nuvem3" type="Sprite" parent="bg" index="1"]
 
 position = Vector2( -188.005, -191.217 )
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 
 [node name="nuvem4" type="Sprite" parent="bg" index="2"]
 
 position = Vector2( 309.624, -327.215 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
 [node name="nuvem" type="Sprite" parent="bg" index="3"]
 
 position = Vector2( 624.892, -24.3101 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 
 [node name="Control" type="Control" parent="." index="3"]
 
@@ -118,7 +73,7 @@ size_flags_vertical = 1
 [node name="life" type="Sprite" parent="Control" index="0"]
 
 position = Vector2( 202.059, 61.1908 )
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 centered = false
 _sections_unfolded = [ "Offset", "Transform", "Z Index" ]
 
@@ -126,7 +81,7 @@ _sections_unfolded = [ "Offset", "Transform", "Z Index" ]
 
 position = Vector2( 202.059, 84.1908 )
 scale = Vector2( 1.07332, 1.06901 )
-texture = ExtResource( 8 )
+texture = ExtResource( 9 )
 centered = false
 _sections_unfolded = [ "Offset", "Transform" ]
 
@@ -134,8 +89,8 @@ _sections_unfolded = [ "Offset", "Transform" ]
 
 position = Vector2( 99.5475, 110.515 )
 scale = Vector2( 1.07332, 1.06901 )
-texture = ExtResource( 9 )
+texture = ExtResource( 10 )
 
-[node name="enemy_generator" parent="." index="4" instance=ExtResource( 10 )]
+[node name="enemy_generator" parent="." index="4" instance=ExtResource( 11 )]
 
 

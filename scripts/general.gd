@@ -1,10 +1,16 @@
 extends Node
 
 const PATH = {
-	loading = "res://scenes/loading.tscn",
+	loading = "res://scenes/loading/loading.tscn",
 	choosemenu = "res://scenes/choosemenu.tscn",
 	menu = "res://scenes/menu.tscn"
 }
+func goto_next_scene():
+	get_tree().change_scene(next_scene)
+
+func goto_load_scene(sce):
+	self.next_scene = sce
+	get_tree().change_scene(PATH.loading)
 
 var next_scene
 
@@ -50,12 +56,4 @@ func set_character(val):
 func set_power_equiped(p,s):
 	STATUS.power_equiped.append(p)
 	STATUS.power_equiped.append(s)
-
-
-func goto_next_scene():
-	get_tree().change_scene(next_scene)
-
-func goto_load_scene(sce):
-	self.next_scene = sce
-	get_tree().change_scene(PATH.loading)
 

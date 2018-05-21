@@ -1,30 +1,19 @@
 extends CanvasLayer
 
-var time = int(rand_range(10,15))
-
-
-
 func _ready():
-	troca_sprite()
+	var time = randi() % 5 + 10
+	var val = randi() % 3
+	print(time)
+	change_sprite(val)
 	$films/Timer.wait_time = time
 	$films/Timer.start()
-	pass
 	
-func troca_sprite():
-	randomize()
-	var supergirls = int(rand_range(0,3))
-	if supergirls == 0:
-		$player/body/lindinha.texture = load("res://art/loading/lindinha.png")
-	elif supergirls == 1:
-		$player/body/lindinha.texture = load("res://art/loading/florzinha.png")
-	else: 
-		$player/body/lindinha.texture = load("res://art/loading/docinho.png")
-
+func change_sprite(_val):
+	$player.change_sprite(_val)
+	$food_spawn.set_val(_val)
+	
 func _on_Timer_timeout():
 	$films/anim.play("fade")
-	
-#todas as cenas vao ter essa func no final
-func change():
+
+func change_scene():
 	general.goto_next_scene()
-	pass
-	
