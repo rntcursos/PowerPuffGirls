@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PuffDraw.svg-1dfa91a211dd44cc3dbe19007f13911a.stex"
+path="res://.import/stage1.png-54ef170170fc3143d656c2fafddad973.stex"
 
 [deps]
 
-source_file="res://art/draw/PuffDraw.svg"
-source_md5="2b3546a8e89fa5e649ef03399037cd9d"
+source_file="res://art/Stages/1/stage1.png"
+source_md5="16b39d924a133b298c698d1418f474f2"
 
-dest_files=[ "res://.import/PuffDraw.svg-1dfa91a211dd44cc3dbe19007f13911a.stex" ]
-dest_md5="738afad38eaa602fec63f326ae546b7c"
+dest_files=[ "res://.import/stage1.png-54ef170170fc3143d656c2fafddad973.stex" ]
+dest_md5="3f5be3ff5b8561e8276e1cf04f3e8c84"
 
 [params]
 

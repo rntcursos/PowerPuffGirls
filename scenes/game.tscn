@@ -1,15 +1,8 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scripts/game.gd" type="Script" id=1]
-[ext_resource path="res://art/bg.png" type="Texture" id=2]
-[ext_resource path="res://art/nuvem2.png" type="Texture" id=3]
-[ext_resource path="res://art/nuvem3.png" type="Texture" id=4]
-[ext_resource path="res://art/nuvem4.png" type="Texture" id=5]
-[ext_resource path="res://art/nuvem.png" type="Texture" id=6]
-[ext_resource path="res://art/rect1209.png" type="Texture" id=7]
-[ext_resource path="res://art/rect1211.png" type="Texture" id=8]
-[ext_resource path="res://art/circle.png" type="Texture" id=9]
-[ext_resource path="res://scenes/enemy/enemy_generator.tscn" type="PackedScene" id=10]
+[ext_resource path="res://art/Stages/1/stage1.png" type="Texture" id=2]
+[ext_resource path="res://scenes/enemy/enemy_generator.tscn" type="PackedScene" id=3]
 
 [sub_resource type="SegmentShape2D" id=1]
 
@@ -29,7 +22,7 @@ custom_solver_bias = 0.0
 a = Vector2( 0, 0 )
 b = Vector2( 1920, 0 )
 
-[node name="game" type="Node"]
+[node name="game" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
@@ -70,33 +63,10 @@ shape = SubResource( 3 )
 
 [node name="bg" type="Sprite" parent="." index="2"]
 
-editor/display_folded = true
-visible = false
 position = Vector2( 961.341, 539.748 )
-scale = Vector2( 1.07332, 1.06901 )
 z_index = -10
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Animation", "Offset", "Region", "Transform", "Z Index" ]
-
-[node name="nuvem2" type="Sprite" parent="bg" index="0"]
-
-position = Vector2( -626.908, -262.307 )
-texture = ExtResource( 3 )
-
-[node name="nuvem3" type="Sprite" parent="bg" index="1"]
-
-position = Vector2( -188.005, -191.217 )
-texture = ExtResource( 4 )
-
-[node name="nuvem4" type="Sprite" parent="bg" index="2"]
-
-position = Vector2( 309.624, -327.215 )
-texture = ExtResource( 5 )
-
-[node name="nuvem" type="Sprite" parent="bg" index="3"]
-
-position = Vector2( 624.892, -24.3101 )
-texture = ExtResource( 6 )
 
 [node name="Control" type="Control" parent="." index="3"]
 
@@ -118,7 +88,6 @@ size_flags_vertical = 1
 [node name="life" type="Sprite" parent="Control" index="0"]
 
 position = Vector2( 202.059, 61.1908 )
-texture = ExtResource( 7 )
 centered = false
 _sections_unfolded = [ "Offset", "Transform", "Z Index" ]
 
@@ -126,7 +95,6 @@ _sections_unfolded = [ "Offset", "Transform", "Z Index" ]
 
 position = Vector2( 202.059, 84.1908 )
 scale = Vector2( 1.07332, 1.06901 )
-texture = ExtResource( 8 )
 centered = false
 _sections_unfolded = [ "Offset", "Transform" ]
 
@@ -134,8 +102,7 @@ _sections_unfolded = [ "Offset", "Transform" ]
 
 position = Vector2( 99.5475, 110.515 )
 scale = Vector2( 1.07332, 1.06901 )
-texture = ExtResource( 9 )
 
-[node name="enemy_generator" parent="." index="4" instance=ExtResource( 10 )]
+[node name="enemy_generator" parent="." index="4" instance=ExtResource( 3 )]
 
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PuffDraw.svg-1dfa91a211dd44cc3dbe19007f13911a.stex"
+path="res://.import/florzinha.png-8442858bf86cd2922d57366554ea6eee.stex"
 
 [deps]
 
-source_file="res://art/draw/PuffDraw.svg"
-source_md5="2b3546a8e89fa5e649ef03399037cd9d"
+source_file="res://art/players/florzinha/florzinha.png"
+source_md5="fcfeacc5859b876a76c8219bc94baa91"
 
-dest_files=[ "res://.import/PuffDraw.svg-1dfa91a211dd44cc3dbe19007f13911a.stex" ]
-dest_md5="738afad38eaa602fec63f326ae546b7c"
+dest_files=[ "res://.import/florzinha.png-8442858bf86cd2922d57366554ea6eee.stex" ]
+dest_md5="c271f6819dd277ea2eb4f63d2f68817a"
 
 [params]
 

@@ -1,12 +1,12 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/character/player.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://art/players/lindinha/lindinha.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 32.5178, 31.6592 )
+extents = Vector2( 67.6858, 55.5844 )
 
 [sub_resource type="CircleShape2D" id=2]
 
