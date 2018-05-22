@@ -18,5 +18,6 @@ func change_sprite(candy):
 		$cupcake.texture = load("res://art/loading/pizza.png")
 
 func _on_doce_area_entered(area):
+	print("colidiu")
 	if area.name == "body":
 		queue_free()
