@@ -6,18 +6,18 @@ var speed = 600
 func _process(delta):
 	position += mov * speed * delta
 	
-	if position.x <= -10:
+	if position.x <= -($sprite.texture.get_size().x)/2:
 		queue_free()
 
 func change_sprite(candy):
 	if candy == 0:
-		$cupcake.texture = load("res://art/loading/cupcake.png")
+		$sprite.texture = load("res://art/loading/cupcake.png")
 	elif candy == 1:
-		$cupcake.texture = load("res://art/loading/sushi.png")
+		$sprite.texture = load("res://art/loading/sushi.png")
 	elif candy == 2: 
-		$cupcake.texture = load("res://art/loading/pizza.png")
+		$sprite.texture = load("res://art/loading/pizza.png")
 
-func _on_doce_area_entered(area):
-	print("colidiu")
-	if area.name == "body":
-		queue_free()
+func _on_doce_body_entered(body):
+		if body.name == "player":
+			get_parent().point()
+			queue_free()

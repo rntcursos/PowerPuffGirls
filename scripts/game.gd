@@ -4,6 +4,7 @@ var player_preload = preload("res://scenes/character/player.tscn")
 
 
 func _ready():
+	randomize()
 	spawn_player()
 
 func spawn_player():

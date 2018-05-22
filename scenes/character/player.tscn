@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scripts/character/player.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
@@ -7,16 +7,6 @@
 
 custom_solver_bias = 0.0
 extents = Vector2( 32.5178, 31.6592 )
-
-[sub_resource type="CircleShape2D" id=2]
-
-custom_solver_bias = 0.0
-radius = 486.995
-
-[sub_resource type="RectangleShape2D" id=3]
-
-custom_solver_bias = 0.0
-extents = Vector2( 36.8596, 59.2903 )
 
 [node name="player" type="KinematicBody2D"]
 
@@ -36,44 +26,5 @@ texture = ExtResource( 2 )
 
 shape = SubResource( 1 )
 _sections_unfolded = [ "Visibility" ]
-
-[node name="area" type="Area2D" parent="." index="2"]
-
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Audio Bus", "Collision", "Visibility" ]
-
-[node name="shape" type="CollisionShape2D" parent="area" index="0"]
-
-shape = SubResource( 2 )
-_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-
-[node name="punchArea" type="Area2D" parent="." index="3"]
-
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Transform", "Visibility" ]
-
-[node name="shape" type="CollisionShape2D" parent="punchArea" index="0"]
-
-position = Vector2( 118.183, 2.45547 )
-shape = SubResource( 3 )
-_sections_unfolded = [ "Material", "Visibility" ]
-
-[connection signal="area_entered" from="area" to="." method="_on_area_area_entered"]
-
-[connection signal="area_entered" from="punchArea" to="." method="_on_punchArea_area_entered"]
-
-[connection signal="area_exited" from="punchArea" to="." method="_on_punchArea_area_exited"]
 
 

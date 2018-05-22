@@ -1,7 +1,6 @@
-extends Node2D
+extends KinematicBody2D
 
-var mov = Vector2()
-var vel = 2000
+var mov
 
 func _process(delta):
 	mov = Vector2()
@@ -13,13 +12,13 @@ func _process(delta):
 		mov.y = -1
 	if Input.is_action_pressed("ui_down"):
 		mov.y = 1
-		
-	position += mov * vel * delta
+	mov *= 50
+	move_and_slide(mov)
 
 func change_sprite(_val):
 	if _val == 0:
-		$body/sprite.texture = load("res://art/loading/lindinha.png")
+		$sprite.texture = load("res://art/loading/lindinha.png")
 	elif _val == 1:
-		$body/sprite.texture = load("res://art/loading/florzinha.png")
+		$sprite.texture = load("res://art/loading/florzinha.png")
 	elif _val == 2: 
-		$body/sprite.texture = load("res://art/loading/docinho.png")
+		$sprite.texture = load("res://art/loading/docinho.png")

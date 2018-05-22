@@ -3,7 +3,7 @@ extends Node
 const PATH = {
 	loading = "res://scenes/loading/loading.tscn",
 	choosemenu = "res://scenes/choosemenu.tscn",
-	menu = "res://scenes/menu.tscn"
+	start = "res://scenes/start.tscn"
 }
 func goto_next_scene():
 	get_tree().change_scene(next_scene)
