@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rect1211.png-45db63acb261718ba206d7ce65ec3690.stex"
+path="res://.import/lindinha2.png-a0c671a58b3011c281e7ebea8fc47e58.stex"
 
 [deps]
 
-source_file="res://art/rect1211.png"
-source_md5="1544baa1dcdc04bc47711c9efcf1b3fc"
+source_file="res://art/players/lindinha/lindinha2.png"
+source_md5="23978cc4a590f395c342864a9eb312c2"
 
-dest_files=[ "res://.import/rect1211.png-45db63acb261718ba206d7ce65ec3690.stex" ]
-dest_md5="b522ea7b8a271cf341c43cd8b3e275f3"
+dest_files=[ "res://.import/lindinha2.png-a0c671a58b3011c281e7ebea8fc47e58.stex" ]
+dest_md5="4864aec76f3095490c70a7b3430c1361"
 
 [params]
 

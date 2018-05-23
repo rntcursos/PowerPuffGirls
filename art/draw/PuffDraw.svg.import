@@ -7,10 +7,10 @@ path="res://.import/PuffDraw.svg-1dfa91a211dd44cc3dbe19007f13911a.stex"
 [deps]
 
 source_file="res://art/draw/PuffDraw.svg"
-source_md5="2b3546a8e89fa5e649ef03399037cd9d"
+source_md5="bfd950e77afb12ce350883933ad330e2"
 
 dest_files=[ "res://.import/PuffDraw.svg-1dfa91a211dd44cc3dbe19007f13911a.stex" ]
-dest_md5="738afad38eaa602fec63f326ae546b7c"
+dest_md5="87b27c29f366016a7d17dfd0eca8abf1"
 
 [params]
 

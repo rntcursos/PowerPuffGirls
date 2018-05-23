@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/nuvem4.png-b60819f46c51ea7466c0624f4f3e4aa9.stex"
+path="res://.import/particles.png-6b2ba03c6e4356b8c494db956e1493e2.stex"
 
 [deps]
 
-source_file="res://art/nuvem4.png"
-source_md5="d227cbd0f1e683b5486cea47a1200dbe"
+source_file="res://art/players/lindinha/particles.png"
+source_md5="5ba1806b749c5d4cc4afc4f06b32d072"
 
-dest_files=[ "res://.import/nuvem4.png-b60819f46c51ea7466c0624f4f3e4aa9.stex" ]
-dest_md5="0d3ce6d7d9d003c46d8fed0ec627b0c1"
+dest_files=[ "res://.import/particles.png-6b2ba03c6e4356b8c494db956e1493e2.stex" ]
+dest_md5="24d908c84747d642322ca47e75ae8d6d"
 
 [params]
 

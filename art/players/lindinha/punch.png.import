@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/predio3.png-db8df677525726baff3d496ce7f61d82.stex"
+path="res://.import/punch.png-5f0bf0ac6695ceffd633bf1513baa614.stex"
 
 [deps]
 
-source_file="res://art/predio3.png"
-source_md5="7d3aed855a101411043ba620fe2f8053"
+source_file="res://art/players/lindinha/punch.png"
+source_md5="31a7168900b820ae8ef9daf270f595e3"
 
-dest_files=[ "res://.import/predio3.png-db8df677525726baff3d496ce7f61d82.stex" ]
-dest_md5="c5a86157d29bd06d7d543043c9416033"
+dest_files=[ "res://.import/punch.png-5f0bf0ac6695ceffd633bf1513baa614.stex" ]
+dest_md5="d6c34609b4beddf134b9f593697637f4"
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/powers.png-9dbedf871f9981ec33c79c7f589289f7.stex"
+path="res://.import/lindinha3.png-964d6f606c3c1fc0451a7dc3fe9c4b80.stex"
 
 [deps]
 
-source_file="res://art/powers.png"
-source_md5="e70a397f903696b920189da219f00445"
+source_file="res://art/players/lindinha/lindinha3.png"
+source_md5="85941ec902c6fa9ab821bcec6c21fa8f"
 
-dest_files=[ "res://.import/powers.png-9dbedf871f9981ec33c79c7f589289f7.stex" ]
-dest_md5="12ce80c0c37493b9eab8f89f651198ce"
+dest_files=[ "res://.import/lindinha3.png-964d6f606c3c1fc0451a7dc3fe9c4b80.stex" ]
+dest_md5="b85d0632440d1acd7d13e78f86e13d44"
 
 [params]
 
