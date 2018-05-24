@@ -77,7 +77,7 @@ custom_solver_bias = 0.0
 a = Vector2( 0, 0 )
 b = Vector2( 1920, 0 )
 
-[node name="loading" type="CanvasLayer"]
+[node name="loading" type="CanvasLayer" index="0"]
 
 layer = 1
 offset = Vector2( 0, 0 )
