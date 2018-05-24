@@ -6,7 +6,7 @@ func _ready():
 #	var time = randi() % 5 + 10
 #	var val = randi() % 3
 	change_sprite(randi() % 3)
-	$films/Timer.wait_time = (randi() % 5 + 10)
+	$films/Timer.wait_time = (randi() % 10 + 3)
 	$films/Timer.start()
 
 func change_sprite(_val):
@@ -20,5 +20,5 @@ func change_scene():
 	general.goto_next_scene()
 
 func point():
-	print("énois")
+	#func de pontuar
 	pass

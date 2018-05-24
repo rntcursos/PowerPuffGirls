@@ -1,14 +1,25 @@
 extends Node
 
-var player_preload = preload("res://scenes/character/player.tscn")
 var player
+var player_character = general.get_character()
+const CHARACTERS = {
+	lindinha = preload("res://scenes/character/Lindinha.tscn"),
+	florzinha = preload("res://scenes/character/Florzinha.tscn"),
+	docinho = preload("res://scenes/character/Docinho.tscn")
+}
 
 func _ready():
 	randomize()
 	spawn_player()
 
 func spawn_player():
-	player = player_preload.instance()
+	if player_character == 0:
+		player = CHARACTERS.lindinha.instance()
+	elif player_character == 1:
+		player = CHARACTERS.florzinha.instance()
+	elif player_character == 2:
+		player = CHARACTERS.docinho.instance()
+	print(player)
 	player.position = $spawn.position
 	add_child(player)
 
@@ -19,6 +30,8 @@ func hit(_life):
 
 func game_over():
 	print("game over")
+
+
 #func empty_life(val):
 #	if general.STATUS.vida <= 0:
 #		return false

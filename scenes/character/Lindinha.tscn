@@ -1,16 +1,15 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scenes/character/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scripts/character/Lindinha.gd" type="Script" id=2]
-[ext_resource path="res://art/players/lindinha.png" type="Texture" id=3]
-[ext_resource path="res://art/players/lindinha2.png" type="Texture" id=4]
-[ext_resource path="res://art/players/lindinha3.png" type="Texture" id=5]
-[ext_resource path="res://art/players/lindinha4.png" type="Texture" id=6]
+[ext_resource path="res://art/players/lindinha/lindinha.png" type="Texture" id=3]
+[ext_resource path="res://art/players/lindinha/lindinha2.png" type="Texture" id=4]
+[ext_resource path="res://art/players/lindinha/lindinha3.png" type="Texture" id=5]
 
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
-"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 5 ) ],
 "loop": true,
 "name": "idle",
 "speed": 5.0
@@ -24,7 +23,6 @@ script = ExtResource( 2 )
 
 frames = SubResource( 1 )
 animation = "idle"
-frame = 3
-playing = true
+frame = 1
 
 
