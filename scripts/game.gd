@@ -13,17 +13,17 @@ func _ready():
 	spawn_player()
 
 func spawn_player():
+	player_character = 0 #teste
 	if player_character == 0:
 		player = CHARACTERS.lindinha.instance()
 	elif player_character == 1:
 		player = CHARACTERS.florzinha.instance()
 	elif player_character == 2:
 		player = CHARACTERS.docinho.instance()
-	print(player)
 	player.position = $spawn.position
 	add_child(player)
 
-func hit(_life):
+func damage(_life):
 	$control/life.scale = Vector2(float(_life)/100, 1)
 	if _life == 0:
 		game_over()

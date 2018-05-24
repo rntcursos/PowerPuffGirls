@@ -7,7 +7,7 @@ var life = 100
 signal hit
 
 func _ready():
-	connect("hit", get_parent(), "hit")
+	connect("hit", get_parent(), "damage")
 	add_to_group(general.GROUPS.player)
 
 
