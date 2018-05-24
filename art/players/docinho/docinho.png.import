@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PuffDraw.svg-1dfa91a211dd44cc3dbe19007f13911a.stex"
+path="res://.import/docinho.png-2cff83bb074a2c7849d0db2795baa6a4.stex"
 
 [deps]
 
-source_file="res://art/draw/PuffDraw.svg"
-source_md5="dbcfb21ae3b85ba0048c302e83ed4855"
+source_file="res://art/players/docinho/docinho.png"
+source_md5="fae4f1ea802aef550911aa13dce249eb"
 
-dest_files=[ "res://.import/PuffDraw.svg-1dfa91a211dd44cc3dbe19007f13911a.stex" ]
-dest_md5="5ee86aef2ad52ddd22976a5894bad9d9"
+dest_files=[ "res://.import/docinho.png-2cff83bb074a2c7849d0db2795baa6a4.stex" ]
+dest_md5="2a763696d45de288cd00b03276bbae3e"
 
 [params]
 
