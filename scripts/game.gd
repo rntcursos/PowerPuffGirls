@@ -9,7 +9,7 @@ func _ready():
 
 func spawn_player():
 	player = player_preload.instance()
-	player.position = $player_spaw.position
+	player.position = $spawn.position
 	add_child(player)
 
 func hit(_life):
