@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PuffDraw.svg-1dfa91a211dd44cc3dbe19007f13911a.stex"
+path="res://.import/punch.png-5f0bf0ac6695ceffd633bf1513baa614.stex"
 
 [deps]
 
-source_file="res://art/draw/PuffDraw.svg"
-source_md5="dbcfb21ae3b85ba0048c302e83ed4855"
+source_file="res://art/players/lindinha/punch.png"
+source_md5="31a7168900b820ae8ef9daf270f595e3"
 
-dest_files=[ "res://.import/PuffDraw.svg-1dfa91a211dd44cc3dbe19007f13911a.stex" ]
-dest_md5="5ee86aef2ad52ddd22976a5894bad9d9"
+dest_files=[ "res://.import/punch.png-5f0bf0ac6695ceffd633bf1513baa614.stex" ]
+dest_md5="d6c34609b4beddf134b9f593697637f4"
 
 [params]
 

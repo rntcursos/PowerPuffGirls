@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PuffDraw.svg-1dfa91a211dd44cc3dbe19007f13911a.stex"
+path="res://.import/redmonster.png-1982f9f76fc574ae425853ab03cab36c.stex"
 
 [deps]
 
-source_file="res://art/draw/PuffDraw.svg"
-source_md5="dbcfb21ae3b85ba0048c302e83ed4855"
+source_file="res://art/enemy/redmonster.png"
+source_md5="711c43ebbe5a97c26673b3868744cfb9"
 
-dest_files=[ "res://.import/PuffDraw.svg-1dfa91a211dd44cc3dbe19007f13911a.stex" ]
-dest_md5="5ee86aef2ad52ddd22976a5894bad9d9"
+dest_files=[ "res://.import/redmonster.png-1982f9f76fc574ae425853ab03cab36c.stex" ]
+dest_md5="336c66df77dd0f01538e1800dd3b124d"
 
 [params]
 

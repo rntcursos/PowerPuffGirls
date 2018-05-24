@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PuffDraw.svg-1dfa91a211dd44cc3dbe19007f13911a.stex"
+path="res://.import/lindinha2.png-a0c671a58b3011c281e7ebea8fc47e58.stex"
 
 [deps]
 
-source_file="res://art/draw/PuffDraw.svg"
-source_md5="dbcfb21ae3b85ba0048c302e83ed4855"
+source_file="res://art/players/lindinha/lindinha2.png"
+source_md5="23978cc4a590f395c342864a9eb312c2"
 
-dest_files=[ "res://.import/PuffDraw.svg-1dfa91a211dd44cc3dbe19007f13911a.stex" ]
-dest_md5="5ee86aef2ad52ddd22976a5894bad9d9"
+dest_files=[ "res://.import/lindinha2.png-a0c671a58b3011c281e7ebea8fc47e58.stex" ]
+dest_md5="4864aec76f3095490c70a7b3430c1361"
 
 [params]
 

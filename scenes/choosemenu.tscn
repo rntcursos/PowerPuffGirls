@@ -7,7 +7,7 @@
 [ext_resource path="res://art/menuchoose/florzinhachoose.png" type="Texture" id=5]
 [ext_resource path="res://art/menuchoose/selectbutton.png" type="Texture" id=6]
 
-[node name="choosemenu" type="Node"]
+[node name="choosemenu" type="Node" index="0"]
 
 script = ExtResource( 1 )
 

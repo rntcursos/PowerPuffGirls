@@ -1,12 +1,23 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scripts/character/player.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://art/players/lindinha/lindinha.png" type="Texture" id=2]
+[ext_resource path="res://art/players/lindinha/lindinha2.png" type="Texture" id=3]
+[ext_resource path="res://art/players/lindinha/lindinha3.png" type="Texture" id=4]
+
+[sub_resource type="SpriteFrames" id=4]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "teste",
+"speed": 5.0
+} ]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 32.5178, 31.6592 )
+extents = Vector2( 67.6858, 55.5844 )
 
 [node name="player" type="KinematicBody2D"]
 
@@ -18,9 +29,12 @@ script = ExtResource( 1 )
 _sections_unfolded = [ "Collision", "collision" ]
 move_speed = 900
 
-[node name="sprite" type="Sprite" parent="." index="0"]
+[node name="sprite" type="AnimatedSprite" parent="." index="0"]
 
-texture = ExtResource( 2 )
+frames = SubResource( 4 )
+animation = "teste"
+frame = 2
+playing = true
 
 [node name="shape" type="CollisionShape2D" parent="." index="1"]
 
