@@ -93,7 +93,7 @@ tracks/0/keys = {
 "values": [ Vector2( 1e-05, 1e-05 ), Vector2( 1e-05, 1e-05 ), Vector2( 1, 1 ) ]
 }
 
-[node name="menu" type="Node"]
+[node name="menu" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
@@ -225,12 +225,10 @@ align = 1
 
 [node name="samples" type="Node" parent="." index="5"]
 
-editor/display_folded = true
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="samples" index="0"]
 
 stream = ExtResource( 11 )
-volume_db = 0.0
+volume_db = -0.5
 autoplay = true
 mix_target = 0
 bus = "Master"
