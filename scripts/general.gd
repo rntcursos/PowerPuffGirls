@@ -1,10 +1,26 @@
 extends Node
 
 const PATH = {
-	loading = "res://scenes/loading.tscn",
+	loading = "res://scenes/loading/loading.tscn",
 	choosemenu = "res://scenes/choosemenu.tscn",
-	menu = "res://scenes/menu.tscn"
+	start = "res://scenes/start.tscn",
+	game = "res://scenes/game.tscn"
 }
+
+var character setget set_character, get_character
+
+func set_character(_character):
+	character = _character
+
+func get_character():
+	return character
+
+func goto_next_scene():
+	get_tree().change_scene(next_scene)
+
+func goto_load_scene(sce):
+	self.next_scene = sce
+	get_tree().change_scene(PATH.loading)
 
 var next_scene
 
@@ -44,18 +60,7 @@ const GROUPS = {
 	enemy = "group_enemy"
 }
 
-func set_character(val):
-	STATUS.character = STATUS.character_available[val]
-
 func set_power_equiped(p,s):
 	STATUS.power_equiped.append(p)
 	STATUS.power_equiped.append(s)
-
-
-func goto_next_scene():
-	get_tree().change_scene(next_scene)
-
-func goto_load_scene(sce):
-	self.next_scene = sce
-	get_tree().change_scene(PATH.loading)
 

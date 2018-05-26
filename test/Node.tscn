@@ -1,0 +1,72 @@
+[gd_scene load_steps=4 format=2]
+
+[sub_resource type="GDScript" id=1]
+
+script/source = "extends KinematicBody2D
+
+var mov
+
+func _process(delta):
+	mov = Vector2()
+	if Input.is_action_pressed(\"ui_right\"):
+		mov.x = 1
+	if Input.is_action_pressed(\"ui_left\"):
+		mov.x = -1
+	if Input.is_action_pressed(\"ui_up\"):
+		mov.y = -1
+	if Input.is_action_pressed(\"ui_down\"):
+		mov.y = 1
+	if Input.is_action_pressed(\"ui_select\"):
+		print($RayCast2D.get_collision_point())
+	mov *= 30
+	move_and_slide(mov)"
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 241.271, 158.596 )
+
+[node name="Node" type="Node" index="0"]
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="." index="0"]
+
+position = Vector2( 306.73, 695.255 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D" index="0"]
+
+shape = SubResource( 2 )
+
+[node name="RayCast2D" type="RayCast2D" parent="KinematicBody2D" index="1"]
+
+enabled = true
+exclude_parent = true
+cast_to = Vector2( 300, 0 )
+collision_mask = 1
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." index="1"]
+
+position = Vector2( 1042.26, 692.322 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" index="0"]
+
+shape = SubResource( 3 )
+
+
